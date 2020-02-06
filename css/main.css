@@ -1,6 +1,10 @@
 
 
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans-serif;
 }
@@ -24,6 +28,9 @@ a {
 .header{
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 
 }
 .header-logo {
@@ -31,6 +38,7 @@ a {
   box-sizing: border-box;
   display: block;
   height: 10vh;
+  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -81,6 +89,15 @@ a {
 
 
 /* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -100,15 +117,6 @@ a {
 }
 .social-link:hover, .social-links:active{
   background-color: #8cbcd3;
-}
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-.social-list > li {
-  display: inline-block;
-  margin: 0 0.5em;
 }
 
 /* BIO STYLES */
