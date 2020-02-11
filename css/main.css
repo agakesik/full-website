@@ -124,6 +124,10 @@ h2 ~ p {
 }
 
 /* COLUMN STYLES */
+
+.col-two {
+  /* display: flex; */
+}
 .col-three {
   display: flex;
   flex: 1;
@@ -177,7 +181,7 @@ h2 ~ p {
 .hero-content h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 7vw;
-margin-bottom: 0.25em;
+  margin-bottom: 0.25em;
 }
 .hero-content .social-link{
   background-color: rgba(255, 255, 255, 0.8);
