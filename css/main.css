@@ -18,6 +18,11 @@ h1 {
 h2 {
   font-size: 2em;
 }
+h4 {
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 a {
   color: #f00;
 }
@@ -126,15 +131,18 @@ h2 ~ p {
 /* COLUMN STYLES */
 
 .col-two {
-  /* display: flex; */
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1;
 }
 .col-three {
   display: flex;
   flex: 1;
-}
-.col {
-  box-sizing: border-box;
-  padding: 2em;
 }
 .col-three .col ~ .col {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -147,6 +155,29 @@ h2 ~ p {
 }
 .col-three .col-aside {
   flex: 0 1 20em;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+/* PAGE STYLES*/
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+  border: 1px solid black;
+}
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
+  margin-bottom: 1em;
 }
 
 /* HERO STYLES */
