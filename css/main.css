@@ -121,6 +121,9 @@ h2 ~ p {
 .footer h3 span {
   color: #aaa;
 }
+.footer-nav{
+  padding: 0.5em;
+}
 .footer-nav li {
   display: inline-block;
 }
@@ -385,7 +388,6 @@ h2 ~ p {
 }
 .post-header {
   margin-bottom: 1.5em;
-  font-size: 1rem;
 }
 .post-header img,
 .post-header .social-link {
