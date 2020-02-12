@@ -463,7 +463,12 @@ h2 ~ p {
     box-shadow: none;
     padding: 0;
   }
-  .post aside {
+  .post-aside {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .half-hero {
     display: none;
   }
 }
