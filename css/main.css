@@ -48,7 +48,6 @@ h2 ~ p {
 /* HEADER STYLES */
 .header{
   background-color: #000;
-  color: #fff;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -84,11 +83,13 @@ h2 ~ p {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
-.header-nav a {
+.header-nav a,
+.drop-trigger {
   color: #fff;
 }
-.nav-links a{
-  font-size: 0.8em;
+.nav-links a,
+.drop-trigger {
+  font-size: 0.8rem;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -102,6 +103,42 @@ h2 ~ p {
 }
 .header-nav > li:first-child a:hover{
   color: #fff;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown:hover .drop-menu {
+  display: block;
+}
+.drop-trigger {
+  display: inline-block;
+  padding-right: 1.5em;
+  position: relative;
+}
+.drop-trigger:after {
+  border: 0.3em solid;
+  border-color: #fff transparent transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0.3em;
+  width: 0;
+}
+.drop-menu {
+  display: none;
+  list-style: none;
+  padding: 1em 0 0;
+  position: absolute;
+  right: 0
+  z-index: 9;
+}
+.drop-menu li {
+  background-color: #fff;
+}
+.drop-menu a {
+  color: #333;
+  display: block;
 }
 
 /* FOOTER STYLES */
