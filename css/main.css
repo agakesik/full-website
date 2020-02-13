@@ -326,7 +326,6 @@ h2 ~ p {
 }
 .bio-box .social-link {
   display: block;
-  border: 1px solid red;
   margin: 2em auto 1em;
 }
 .bio-copy {
