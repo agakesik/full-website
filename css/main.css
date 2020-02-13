@@ -532,6 +532,11 @@ h2 ~ p {
   .post-aside {
     display: none;
   }
+  .pull-left {
+    float: none;
+    margin: 0.25em 0;
+    width: 100%;
+  }
 }
 
 
