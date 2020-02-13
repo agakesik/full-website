@@ -175,6 +175,14 @@ h2 ~ p {
   text-transform: none;
   white-space: nowrap;
 }
+/* HIDE DROPDOWN IN FOOTER */
+.footer .dropdown:hover .drop-menu,
+.footer .drop-trigger:after {
+  display: none;
+}
+.footer .drop-trigger {
+  padding: 0;
+}
 
 /* FOOTER STYLES */
 .footer {
