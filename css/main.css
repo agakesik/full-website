@@ -567,13 +567,11 @@ h2 ~ p {
     padding: 1.5em;
     position: relative;
   }
-  .mobile-menu-check:checked ~ .header-nav {
-    max-height: 1000px;
-  }
+
   .mobile-menu-check:checked ~ .show-mobile-menu:after {
     background-color: #000;
     color: #ed6e2f;
-    content: "CLOSE";
+    content: "X";
     left: 0;
     position: absolute;
     top: 1.5em;
@@ -591,9 +589,12 @@ h2 ~ p {
     position: absolute;
     text-align: center;
     top: 10vh;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
     width: 100vw;
     z-index: 9;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    max-height: 1000px;
   }
   .header-nav li{
     display: block;
