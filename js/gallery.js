@@ -7,12 +7,13 @@ function activateGallery() {
       // what will happen when thumbnail is clicked
       let newImageSrc = thumbnail.dataset.largeVersion;
       let newTitle = thumbnail.dataset.title;
+      let currentClass = "current"
 
       mainImage.setAttribute("src", newImageSrc);
       mainImage.setAttribute("alt", newTitle);
 
-      document.querySelector(".current").classList.remove("current");
-      thumbnail.parentNode.classList.add("current");
+      document.querySelector("."+currentClass).classList.remove(currentClass);
+      thumbnail.parentNode.classList.add(currentClass);
     });
   });
 }
