@@ -6,12 +6,14 @@ function activateGallery() {
   let mainImage = document.querySelector("#gallery-photo img");
 
   thumbnails.forEach(function(thumbnail) {
+    let largeVersion = new Image();
+    largeVersion.src = thumbnail.dataset.largeVersion;
+
     thumbnail.addEventListener("click", function() {
-      let newImageSrc = thumbnail.dataset.largeVersion;
       let newTitle = thumbnail.dataset.title;
 
       // Change main image
-      mainImage.setAttribute("src", newImageSrc);
+      mainImage.setAttribute("src", largeVersion.src);
       mainImage.setAttribute("alt", newTitle);
 
       // Change which image is current
