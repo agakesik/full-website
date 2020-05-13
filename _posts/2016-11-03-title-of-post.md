@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello post nr 1
-postHero: /images//small/slide1.jpg
+postHero: images//small/slide1.jpg
 author: ONLY ME!
 authorTwitter: https://twitter.com/mhartl
 gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
